@@ -3,7 +3,7 @@ var app = express();
 
 app.use(express.static('public'));
 
-app.get('/', function (req, res) {
+app.get('/', function (req, response) {
     response.sendFile(__dirname + '/public/index.html');
 });
 
